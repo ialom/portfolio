@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='woof.jpeg') }}">
+    <title>My Website</title>
+</head>
+<body>
+<h1>Thanks for visiting {{name}}. Dead Inside</h1>
+
+{% if id %}
+<h1 color="yellow">Congrats!!! You are at Blog number {{id}}</h1>
+{% endif %}
+
+<script src="static/script.js"></script>
+</body>
+</html>
